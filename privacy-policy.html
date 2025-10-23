@@ -1,119 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - VoxTask</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #333;
-            margin-top: 30px;
-            margin-bottom: 15px;
-        }
-        .date {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-        ul {
-            margin-left: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .intro {
-            color: #666;
-            margin-bottom: 30px;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p class="intro">This Privacy Policy explains what information we collect, how we use it, and your choices.</p>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, 
+  initial-scale=1.0">
+      <title>Privacy Policy - DiaTask</title>
+      <style>
+          body {
+              font-family: -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+              line-height: 1.6;
+              color: #333;
+              max-width: 800px;
+              margin: 0 auto;
+              padding: 20px;
+              background: #f5f5f5;
+          }
+          .container {
+              background: white;
+              padding: 40px;
+              border-radius: 10px;
+              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          }
+          h1 {
+              color: #000;
+              margin-bottom: 10px;
+          }
+          h2 {
+              color: #000;
+              margin-top: 30px;
+              margin-bottom: 15px;
+          }
+          .date {
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 30px;
+          }
+          ul {
+              margin-left: 20px;
+          }
+          li {
+              margin-bottom: 10px;
+          }
+          p {
+              margin-bottom: 15px;
+          }
+      </style>
+  </head>
+  <body>
+      <div class="container">
+          <h1>Privacy Policy</h1>
 
-        <h2>Information We Collect</h2>
-        <ul>
-            <li>Audio you choose to transcribe, reminder titles, notes, dates, and settings.</li>
-            <li>Anonymous identifiers (e.g., device or temporary user ID) and push tokens.</li>
-            <li>Minimal diagnostics for reliability (e.g., error logs).</li>
-        </ul>
+          <h2>Overview</h2>
+          <p>DiaTask is a voice‑powered task management
+  application that allows users to create tasks through speech.
+  This Privacy Policy explains what information is collected, how
+   it is used, and the choices available to users.</p>
 
-        <h2>How We Use Information</h2>
-        <ul>
-            <li>Transcribe your audio and parse reminders.</li>
-            <li>Schedule notifications and provide app functionality.</li>
-            <li>Improve reliability and support.</li>
-        </ul>
+          <h2>Information Collected</h2>
+          <p><strong>Voice Recordings and
+  Transcriptions:</strong> When a user taps the microphone and
+  speaks a task, the spoken audio is captured and sent to Apple's
+   iOS Speech Recognition service to convert the audio into text.
+   The raw audio is deleted once transcription is complete.</p>
 
-        <h2>Sharing and Processing</h2>
-        <ul>
-            <li>We use trusted processors, including OpenAI (API) for transcription and reminder parsing, and push notification providers.</li>
-            <li>Content you choose to process (e.g., audio, derived text) is sent to these providers solely to provide the service.</li>
-            <li>OpenAI's API does not use customer API data to train their models by default; see OpenAI's Services Agreement and Policies for details.</li>
-        </ul>
+          <p><strong>Task Details:</strong> Transcribed text is
+  sent to the OpenAI API to extract structured information such
+  as task titles, dates/times, and categories. The resulting task
+   data is stored in a database until the user deletes it.</p>
 
-        <h2>AI Processing Notice</h2>
-        <ul>
-            <li>AI outputs may be inaccurate or incomplete. Do not rely on the app for medical, legal, or other safety-critical decisions.</li>
-            <li>Please avoid submitting sensitive personal data (e.g., health, children's personal data, financial account numbers) unless strictly necessary for your use.</li>
-        </ul>
+          <p><strong>Identifiers and Notifications:</strong> A
+  device or temporary user identifier and push notification token
+   are stored to deliver reminders. Minimal diagnostic data (such
+   as request timing and token counts) is collected for
+  reliability and abuse prevention.</p>
 
-        <h2>Retention and Deletion</h2>
-        <ul>
-            <li>Audio is processed securely and not retained longer than necessary for transcription.</li>
-            <li>We record minimal usage events (e.g., request timing, token counts) for reliability, abuse prevention, and billing.</li>
-            <li>Reminders persist until you delete them. You can request deletion in Settings ("Delete All Data") or by contacting us.</li>
-        </ul>
+          <p><strong>Account Information:</strong> If a user
+  signs up with an email and password or through another sign‑in
+  provider, the information required to create and manage an
+  account (using Firebase Authentication) is collected.</p>
 
-        <h2>International Transfers</h2>
-        <ul>
-            <li>We operate in the United States and may process data in other countries where our processors operate. We take steps to protect your data consistent with applicable laws.</li>
-        </ul>
+          <h2>Use of Information</h2>
+          <p><strong>Task Creation:</strong> Voice is transcribed
+   to text, parsed to extract task details, and used to create
+  task entries with automatic reminders (default: 10 minutes
+  before the scheduled time).</p>
 
-        <h2>Security</h2>
-        <ul>
-            <li>Data is protected in transit with TLS and stored with access controls.</li>
-        </ul>
+          <p><strong>Notifications:</strong> Device tokens enable
+   scheduled local push notifications reminding users of upcoming
+   tasks.</p>
 
-        <h2>Children</h2>
-        <ul>
-            <li>The service is not directed to children under 13 (or 16 where applicable). We do not knowingly collect children's personal data.</li>
-        </ul>
+          <p><strong>Application Functionality and
+  Support:</strong> Diagnostic data helps maintain reliability,
+  troubleshoot issues, and prevent misuse.</p>
 
-        <h2>Your Choices</h2>
-        <ul>
-            <li>Control microphone access and notifications in system settings.</li>
-            <li>In the app, you can delete your data in Settings. You may also contact us to access or correct your information.</li>
-        </ul>
+          <p><strong>Cross‑Device Sync:</strong> Task data is
+  stored in Firebase Firestore to ensure synchronization across
+  devices.</p>
 
-        <h2>Contact</h2>
-        <p>Contact: support@voxtask.info</p>
-        <p>https://voxtask.com/privacy</p>
+          <p>DiaTask does not sell data or use it for
+  advertising.</p>
 
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-        <p style="text-align: center; color: #999; font-size: 14px;">
-            © 2025 VoxTask. All rights reserved.
-        </p>
-    </div>
-</body>
-</html>
+          <h2>Sharing and Processing</h2>
+          <p><strong>Processors:</strong> Service providers are
+  used only to operate DiaTask. These include:</p>
+          <ul>
+              <li>Apple's iOS Speech Recognition for on‑device or
+   cloud transcription.</li>
+              <li>OpenAI for text parsing and task
+  extraction.</li>
+              <li>Firebase (Google) for authentication and cloud
+  storage.</li>
+              <li>Push notification services such as Apple Push
+  Notification Service.</li>
+          </ul>
+
+          <p><strong>Policies of Third Parties:</strong> OpenAI's
+   API does not use customer API data to train models by default.
+   Users should refer to OpenAI's service agreements and usage
+  policies for more details.</p>
+
+          <p><strong>No Third‑Party Advertising:</strong> Data is
+   not shared with advertisers. Content is shared only as needed
+  to operate or improve the service, prevent abuse, or comply
+  with legal requirements.</p>
+
+          <h2>Retention and Deletion</h2>
+          <p><strong>Voice Recordings:</strong> Deleted
+  immediately after transcription is completed.</p>
+
+          <p><strong>Tasks:</strong> Persist until deleted by the
+   user. Users may delete tasks individually or use a "Delete All
+   Data" option within settings.</p>
+
+          <p><strong>Diagnostics:</strong> Retained only as long
+  as necessary to maintain reliability and prevent misuse.</p>
+
+          <p><strong>Accounts:</strong> Deleting an account
+  removes the associated task data and authentication
+  details.</p>
+
+          <h2>Security</h2>
+          <p>Data is protected in transit with TLS (HTTPS) and
+  stored with access controls. While these measures enhance
+  security, no system is entirely secure.</p>
+
+          <h2>International Transfers</h2>
+          <p>DiaTask operates in the United States and may
+  process data on servers in other countries where service
+  providers operate. Measures are taken to ensure an adequate
+  level of data protection.</p>
+
+          <h2>Children</h2>
+          <p>The service is not directed to children under 13 (or
+   under 16 where applicable). Personal data from children is not
+   knowingly collected. If a parent or guardian believes a child
+  has provided data, they may contact DiaTask to request
+  deletion.</p>
+
+          <h2>User Choices</h2>
+          <p><strong>Permissions:</strong> Users may disable
+  microphone access and notifications via device settings.</p>
+
+          <p><strong>Data Deletion:</strong> Users may delete
+  individual tasks or use the "Delete All Data" option in
+  settings. Users may also request deletion or correction of
+  personal data by contacting support.</p>
+
+          <p><strong>AI Disclaimer:</strong> AI‑generated outputs
+   may be inaccurate or incomplete; users should not rely on
+  DiaTask for medical, legal, or other safety‑critical
+  purposes.</p>
+
+          <h2>Changes</h2>
+          <p>This Privacy Policy may be updated. Material changes
+   will be communicated via the app or by email. Continued use of
+   DiaTask after changes constitutes acceptance of the updated
+  policy.</p>
+
+          <h2>Contact</h2>
+          <p>For questions about this Privacy Policy or data
+  practices, please email
+  <strong>support@voxtask.info</strong>.</p>
+
+          <hr style="margin: 40px 0; border: none; border-top: 
+  1px solid #ddd;">
+          <p style="text-align: center; color: #999; font-size: 
+  14px;">
+              © 2025 DiaTask. All rights reserved.
+          </p>
+      </div>
+  </body>
+  </html>
+
